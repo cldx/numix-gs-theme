@@ -1,15 +1,4 @@
-KNOWN ISSUES:
-Favourites bar
-Notifications bar device menu popover (might be more NB issues)
-Dash scrollbars
-Show apps bg colour on hover
-Various minor adjustments
-The Control+Alt+Arrow overlay
-Needs new images
+This is the Numix Gnome Shell Theme
 
-FIXED from the time of the previous tarball:
-Outlines issues
-Modal dialogs
+Don't install unless you love incomplete Stuff that breaks in various places.
 
-Ratonale:
-Fixing those is great, but fixing those with sticking to the current design is even better :>
