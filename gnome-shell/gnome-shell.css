@@ -683,21 +683,24 @@ StScrollBar StButton#vhandle:active {
 }
 
 .window-close {
-    background-color: rgba(255,255,255,0);
-    background-image: url("img/close-window.png");
-    border-radius: 4px;
-    border: 1px solid rgba(0,0,0,0);
-    height: 35px;
-    width: 36px;
-    transition-duration: 200;
-    -shell-close-overlap: 29px;
+    background-color: rgba(255,255,255,0.0);
+    background-image: url("img/close-window.svg");
+    border-radius: 20px;
+    border: 0px solid rgba(0,0,0,0.0);
+    height: 32px;
+    width: 32px;
+    transition-duration: 600;
+    box-shadow:0px 0px 20px rgba(255,255,255,0.2);
+    -shell-close-overlap: 20px;
 
 }
 
 .window-close:hover
  {
-    background-color: rgba(255,255,255,0.3);
-    border: 1px solid rgba(0,0,0,0.1);
+    background-color: rgba(255,255,255,0.0);
+    background-image: url("img/close-window-hover.svg");
+    border: 0px solid rgba(0,0,0,0.0);
+     box-shadow:0px 0px 20px rgba(255,255,255,0.8);
 }
 
 .notification-close{
