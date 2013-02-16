@@ -1,17 +1,20 @@
 KNOWN ISSUES:
-Favourites bar
-Notifications bar device menu popover (might be more NB issues)
-Dash scrollbars
+Favourite bar opened apps (hovered apps) selection
+Dash categories
 Show apps bg colour on hover
 Various minor adjustments
-The Control+Alt+Arrow overlay
-Needs new images
+Needs new images (without switches and notification area and checboxes)
+Border radius on Switches should use the same values as other elements (e.g. hovered list items)
 
--Border radius on Switches should use the same values as other elements (e.g. hovered list items)
-
-FIXED from the time of the previous tarball:
+FIXED FROM THE TIME OF THE PREVIOUS TARBALL:
 Outlines issues
 Modal dialogs
+Favourite bar (+tooltips)
+Switches
+Checkboxes
+Notification Area
+Notification popups
+The Control+Alt+Arrow overlay
+Dash scrollbars
 
-Ratonale:
-Fixing those is great, but fixing those with sticking to the current design is even better :>
+
