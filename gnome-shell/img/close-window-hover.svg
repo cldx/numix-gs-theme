@@ -213,6 +213,38 @@
          stdDeviation="0.54"
          id="feGaussianBlur4298" />
     </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3979-7"
+       id="linearGradient4306"
+       x1="15"
+       y1="1027.3622"
+       x2="15"
+       y2="1047.3622"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient3979-7">
+      <stop
+         style="stop-color:#838382;stop-opacity:1;"
+         offset="0"
+         id="stop3981-1" />
+      <stop
+         style="stop-color:#50504f;stop-opacity:1;"
+         offset="1"
+         id="stop3983-2" />
+    </linearGradient>
+    <filter
+       inkscape:collect="always"
+       id="filter3911"
+       x="-0.2412"
+       width="1.4824"
+       y="-0.2412"
+       height="1.4824">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.005"
+         id="feGaussianBlur3913" />
+    </filter>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -221,9 +253,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="11.313708"
-     inkscape:cx="-1.3238701"
-     inkscape:cy="24.860433"
+     inkscape:zoom="22.627416"
+     inkscape:cx="9.4062698"
+     inkscape:cy="15.432372"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -288,6 +320,12 @@
        inkscape:connector-curvature="0"
        id="path2997"
        d="m 19,1041.3622 -3,-3 -3,3 -2,0 0,-2 3,-3 -3,-3 0,-2 2,0 3,3 3,-3 2,0 0,2 -3,3 3,3 0,2 z"
+       style="fill:#eeeeec;fill-opacity:1;stroke:none;filter:url(#filter3911)" />
+    <path
+       sodipodi:nodetypes="ccccccccccccccccc"
+       inkscape:connector-curvature="0"
+       id="path2997-0"
+       d="m 18.5,1040.3622 -2.5,-2.5 -2.5,2.5 -1.5,0 0,-1.5 2.5,-2.5 -2.5,-2.5 0,-1.5 1.5,0 2.5,2.5 2.5,-2.5 1.5,0 0,1.5 -2.5,2.5 2.5,2.5 0,1.5 z"
        style="fill:#d64937;fill-opacity:1;stroke:none" />
   </g>
 </svg>
