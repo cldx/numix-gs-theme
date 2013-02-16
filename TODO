@@ -7,6 +7,8 @@ Various minor adjustments
 The Control+Alt+Arrow overlay
 Needs new images
 
+-Border radius on Switches should use the same values as other elements (e.g. hovered list items)
+
 FIXED from the time of the previous tarball:
 Outlines issues
 Modal dialogs
