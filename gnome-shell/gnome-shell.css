@@ -330,7 +330,7 @@ StScrollBar StButton#vhandle:active {
     color: #9f9f9f;
 }
 
-/* Entries */
+/* Entries ************************************************************/
 
 .notification StEntry,
 .login-dialog-prompt-entry,
@@ -658,7 +658,7 @@ StScrollBar StButton#vhandle:active {
 /*    -st-background-image-shadow: 2px 2px 6px rgba(0,0,0,0.5);*/
 }
 
-/* Dash */
+/* Dash ***************************************************************/
 
 #dash {
     spacing: 0px;
@@ -694,7 +694,7 @@ StScrollBar StButton#vhandle:active {
 /* Search Box */
 
 #searchEntry {
-    background-color: rgba(45,45,45,0.8);
+    background-color: rgba(45,45,45,1.0);
     border-radius: 2px;
     border: 1px solid rgba(173,169,168,1.0);
     caret-color: rgba(255,255,255,0.2);
@@ -953,7 +953,7 @@ StBin.overview-icon StLabel {
 /*    text-align: center;*/
 }
 
-/* LookingGlass */
+/* LookingGlass *******************************************************/
 
 #LookingGlassDialog {
     background-color: rgba(0,0,0,1.0);
@@ -1070,7 +1070,7 @@ StBin.overview-icon StLabel {
     padding: 6px;
 }
 
-/* Calendar popup */
+/* Calendar popup *****************************************************/
 
 #calendarEventsArea {
     /* this is the width of the second column of the popup */
@@ -1312,7 +1312,7 @@ StBin.overview-icon StLabel {
     link-color: #f3f3f3;
 }
 
-/* Message Tray */
+/* Message Tray *******************************************************/
 #message-tray {
     background: rgba(45,45,45,1.0);
     background-repeat: repeat;
@@ -1704,14 +1704,8 @@ StBin.overview-icon StLabel {
 }
 
 .workspace-switcher-container {
-/*    padding: 10px 20px 10px 20px;*/
-/*    background-gradient-direction: vertical;*/
-/*    background-gradient-start: rgba(255,255,255,0.6);*/
-/*    background-gradient-end: rgba(255,255,255,0.4);*/
-/*    box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.2);*/
-/*    border: 1px solid rgba(0,0,0,0.4);*/
-/*    border-radius: 4px;*/
-/*    padding: 20px;*/
+	padding: 10px;
+	background:transparent;
 }
 
 .workspace-switcher {
@@ -1719,13 +1713,13 @@ StBin.overview-icon StLabel {
 }
 
 .ws-switcher-active-up {
-    background-color: rgba(255,255,255,0.8);
+    background: url('img/ws-switch-arrow-up.svg');
     border-radius: 4px;
 }
 
 .ws-switcher-active-down {
     border-radius: 4px;
-    background-color: rgba(255,255,255,0.8);
+    background: url('img/ws-switch-arrow-down.svg');
 }
 
 .ws-switcher-box {
