@@ -458,17 +458,19 @@ StScrollBar StButton#vhandle:active {
 }
 
 .panel-button:hover {
-    background: rgba(255,255,255,0.1);
+    background: rgba(214,73,55,0.675);
+    box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.9);
     border:0px;
 }
 
 .panel-button:active,
 .panel-button:overview,
 .panel-button:focus {
-    background: rgba(255,255,255,0.1);
+    background: rgba(214,73,55,1.0);
     box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.2);
     text-shadow: rgba(0,0,0,0.2) 0px -1px 0px;
     border: 0px;
+    color: white;
 }
 
 .panel-status-button:active,
@@ -1705,7 +1707,9 @@ StBin.overview-icon StLabel {
 
 .workspace-switcher-container {
 	padding: 10px;
-	background:transparent;
+	background: rgba(45,45,45,1.0);
+        border-radius: 2px;
+        border: 1px solid rgba(173,169,168,1.0);
 }
 
 .workspace-switcher {
