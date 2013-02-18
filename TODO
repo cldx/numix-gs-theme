@@ -1,32 +1,20 @@
 KNOWN ISSUES:
-Favourite bar opened apps (hovered apps) selection
-Dash categories 
-Show apps bg colour on hover  ....meaning? [joern]
-Needs new images:
-	[georgi]Switches (mind if i redo those? [joern]
-	[georgi]Notification Area (?? what Image)
-	[georgi]Checkboxes 
-Border radius on Switches should use the same values as other elements (e.g. hovered list items)
-The Switches don't really show if they are on or off, we need to fix that
-Crazy jumping of Text in the Panel needs to go (probably margin issues and/or caused by the border on Panel Elements during hover
-Crazy jumping of List Elements need to go (e.g. the Status selection in the User Menu Popup), probably margin issues
-The Message Tray is sqeezed downwards, it should have the same margin top/bottom as it does left/right for the AppIcons that are living there
+ - Modal dialogs buttons - negative(s) - grey, positive - red 
+ - Weather
+ - GDM/Login/Lock
+ - Close buttons - the fill colour should be more red shade of grey
+ - Nofications bubbles - the Close buttons are hard to see unless you hover on them (actually the buttom design could use redoing)
+ - process-working images (both svg and png) must be red coloured, not blue
+ - Callendars arrow - the non hover ones should be lighter (50,50,50,1.0), the hover ones should be red
+ - All borders should be with 2px rounded edges
+ - The borders of the widgets in the Activities overview should be dark and transparent so they won't stick out that much
+ - Needs code cleanup
+ - Maybe some other issues
 
-Best Idea would be to take advantage of bugs in github, i'm gonna push major issues there from now.
-We should assing tasks to ourselves by prepending the Issue with our name (like i did above) so we know what not to touch for now and 
-what everybody is working on.
+Fixed in this release:
+ - Panel secltor
+ - Workspace Ctrl+Alt+Arrow overlay 
 
-
-FIXED FROM THE TIME OF THE PREVIOUS TARBALL:
-Outlines issues
-Modal dialogs
-Favourite bar (+tooltips)
-Switches
-Checkboxes
-Notification Area
-Notification popups
-The Control+Alt+Arrow overlay
-Dash scrollbars
-[joern]Added new Window Close Buttons with a nice hover state
-
+Fixed in previous releases:
+ - Everythine else :> (jonestly - way too much to write it all down, plus it will just create clutter in the file)
 
