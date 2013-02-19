@@ -1,7 +1,9 @@
 @background-color : rgba(45,45,45,1.0);				/*Dark Grey*/
-@background-color-light: rgba(173,169,168,1.0);
+@background-color-light: rgba(173,169,168,1.0);     /*Light Grey*/
 @overview-color : rgba(45,45,45,0.4);
+@button-color : rgba(20,20,20,1.0);
 @focus-color : rgba(214,73,55,1.0);     				/*Brihgt Red*/
+/* @focus-color : rgba(214,73,55,1.0); */    				/*Brihgt Red*/
 @focus-color-medium : desaturate(@focus-color, 30%);	/*Lighter Red*/
 @focus-color-low : desaturate(@focus-color, 50%);		/* you get the idea */
 
@@ -57,16 +59,18 @@ stage {
     font-weight: bold;
 }
 
-/*Dark Dialogs*/
+/* Dialog Convenience */
 .switcher-list,
 .run-dialog,
-.modal-dialog {
+.modal-dialog,
+.end-session-dialog {
     background-color: @background-color;
     border-radius: @border-radius;
     border: @border-width solid @border-color;
     color: white;
     font-size: @text-size;
     padding: 16px 16px;
+    spacing:10px;
 }
 
 /* Scroll Bars ********************************************************/
@@ -300,11 +304,10 @@ StScrollBar StButton#vhandle:active {
 .hotplug-notification-item,
 .hotplug-resident-eject-button,
 .modal-dialog-button {
-    background-color: @focus-color;
+    background-color: @background-color-light;
     border-radius: @border-radius;
     border: @border-width solid @border-color;
-    box-shadow: inset 0px 1px 0px 0px rgba(0,0,0,0.0);
-	color: rgba(247, 247, 247, 0.95);
+	color: @background-color;
     font-size: @text-size;
     font-weight:bold;
     padding: 5px 15px;
@@ -318,8 +321,8 @@ StScrollBar StButton#vhandle:active {
 .hotplug-notification-item:hover,
 .hotplug-resident-eject-button:hover,
 .modal-dialog-button:hover {
-    background-color: rgba(214,73,55,0.8);
-    color: rgba(249, 249, 249, 1.0);
+    background-color: @focus-color;
+    color: @text-color-light;
 }
 
 .dash-search-button:selected,
@@ -328,8 +331,8 @@ StScrollBar StButton#vhandle:active {
 .notification-icon-button:focus,
 .hotplug-notification-item:focus,
 .modal-dialog-button:focus {
-    box-shadow: inset 0px 1px 8px 0px rgba(0,0,0,0.4);
-    color:rgba(40,40,40,1.0);
+	background: @focus-color;
+    color:@text-color;
 }
 
 .dash-search-button:active,
@@ -340,8 +343,7 @@ StScrollBar StButton#vhandle:active {
 .hotplug-resident-eject-button:active,
 .modal-dialog-button:active,
 .modal-dialog-button:pressed {
-    border: @border-width solid rgba(0,0,0,0.3);
-    box-shadow: inset 0px 1px 4px 0px rgba(0,0,0,0.4);
+  /*  border: @border-width solid @border-color;*/
 }
 
 .notification-icon-button:insensitive,
@@ -1328,7 +1330,7 @@ StBin.overview-icon StLabel {
 
 /* Message Tray *******************************************************/
 #message-tray {
-    background: rgba(45,45,45,1.0);
+    background: rgba(45,45,45,1.0); 
     background-repeat: repeat;
     transition-duration: 200;
     height: 64px;
@@ -1340,6 +1342,7 @@ StBin.overview-icon StLabel {
 }
 
 #message-tray:overview {
+    background: @border-transparent;
     background: rgba(45, 45, 45, 1.0);
     border-top: @border-width solid @border-color;
 }
@@ -1616,6 +1619,8 @@ StBin.overview-icon StLabel {
 }
 
 .switcher-list {
+background: @background-color;
+border:@border-width solid @border-color;
 }
 
 .switcher-list-item-container {
@@ -1756,20 +1761,20 @@ width:100px;
 }
 
 .modal-dialog {
-background-color: rgba(45,45,45,1.0);
-border-color: rgba(173,168,169,1.0);
+background-color: @background-color;
+border-color: @border-color;
 }
 
 /* DOESN'T WORK*/
-.modal-dialog-entry {
+/*.modal-dialog-entry {
     font-size: 11pt;
     font-weight: bold;
     color: rgba(45,45,45,0.9);
     border: @border-width solid rgba(0,0,0,0.1);
     background-color: rgba(249,249,249,0.8);
-  /*box-shadow: inset 0px 1px 0px rgba(255,255,255,0.4);*/
+  box-shadow: inset 0px 1px 0px rgba(255,255,255,0.4);	
     padding: 4px;
-}
+}*/
 /*END OF THE ONE THAT DOESN'T WORK*/
 
 .modal-dialog-button-box {
@@ -1787,10 +1792,11 @@ border-color: rgba(173,168,169,1.0);
 }
 
 .modal-dialog-button:focus {
-    padding: 3px 31px 4px;
+   /* padding: 3px 31px 4px; */
 }
 
 /* Run Dialog *********************************************************/
+/* see Dialog Convenience */
 .run-dialog-label {
     font-size: @text-size;
     padding-bottom: 10px;
@@ -1816,11 +1822,6 @@ border-color: rgba(173,168,169,1.0);
     padding: 4px;
 }
 
-.run-dialog {
-background-color: rgba(45,45,45,1.0); 
-border-color: rgba(173,168,169,1.0);
-border-width: 1px;
-}
 
 .lightbox {
     background-color: rgba(0,0,0,0.3);
@@ -1830,12 +1831,8 @@ border-width: 1px;
     background-color: white;
 }
 
-/* End Session Dialog */
-.end-session-dialog {
-    background-color: rgba(20,20,20,1.0);
-    border-color: rgba(0,0,0,0.65);
-    spacing: 42px;
-}
+/* End Session Dialog *************************************************/
+/* see Dialog Convenience */
 
 .end-session-dialog-subject {
     padding-top: 10px;
