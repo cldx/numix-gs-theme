@@ -255,7 +255,7 @@ StScrollBar StButton#vhandle:active {
 .hotplug-notification-item:focus,
 .modal-dialog-button:focus {
   background: #d64937;
-  color: #dcdcdc;
+  color: #f9f9f9;
 }
 .dash-search-button:active,
 .dash-search-button:pressed,
