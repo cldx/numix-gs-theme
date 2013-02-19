@@ -1,11 +1,10 @@
-/* Text Styles ********************************************************/
-/* Colors */
 /*Dark Grey*/
 /*Brihgt Red*/
 /*Lighter Red*/
 /* you get the idea */
 /*Light Grey*//* Default Border Radius*/
 /* Bigger Radius*/
+/* Text Styles ********************************************************/
 /* Default Text Style */
 stage {
   font-family: PT Sans, Cantarell, sans-serif;
@@ -63,7 +62,7 @@ StScrollView StScrollBar {
   min-height: 10px;
 }
 StScrollBar StBin#trough {
-  background: #505050;
+  background: rgba(171, 171, 171, 0.3);
   border: 1px solid rgba(173, 169, 168, 0.3);
   border-radius: 2px;
 }
@@ -134,7 +133,7 @@ StScrollBar StButton#vhandle:active {
   border-width: 1px;
 }
 .popup-sub-menu StScrollBar StBin#vhandle {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(171, 171, 171, 0.3);
   border-width: 1px;
 }
 /* The remaining popup-menu sizing is all done in ems, so that if you
@@ -370,15 +369,14 @@ StScrollBar StButton#vhandle:active {
   border: 0px;
 }
 .panel-button:hover {
-  background: rgba(214, 73, 55, 0.675);
+  background: #b2655b;
   border: 0px;
 }
 .panel-button:active,
 .panel-button:overview,
 .panel-button:focus {
   background: #d64937;
-  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
-  text-shadow: rgba(0, 0, 0, 0.2) 0px -1px 0px;
+  text-shadow: #2d2d2d 0px -1px 0px;
   border: 0px;
 }
 .panel-menu {
@@ -396,7 +394,7 @@ StScrollBar StButton#vhandle:active {
   spacing: .2em;
 }
 .status-chooser-user-icon {
-  border: 2px solid rgba(173, 169, 168, 0.3);
+  border: 4px solid rgba(173, 169, 168, 0.3);
   border-radius: 40px;
   width: 64px;
   height: 64px;
@@ -404,7 +402,7 @@ StScrollBar StButton#vhandle:active {
   transition-duration: 400;
 }
 .status-chooser-user-icon:hover {
-  border: 2px solid #d64937;
+  border: 4px solid #d64937;
 }
 .status-chooser:insensitive {
   padding-left: 15px;
@@ -417,7 +415,7 @@ StScrollBar StButton#vhandle:active {
   font-size: 10pt;
 }
 .status-chooser-combo.popup-combo-menu {
-  background-color: #505050;
+  background-color: #ada9a8;
   padding: .5em .2em;
   border-radius: 2px;
   border: 1px solid rgba(173, 169, 168, 0.3);
@@ -441,7 +439,7 @@ StScrollBar StButton#vhandle:active {
 /* Overview ***********************************************************/
 #overview {
   spacing: 20px;
-  background-color: rgba(45, 45, 45, 0.8);
+  background-color: NaN%;
 }
 .workspace-controls {
   visible-width: 25px;
@@ -480,8 +478,6 @@ StScrollBar StButton#vhandle:active {
 
   border-radius: 2px;
   border: 1px solid rgba(173, 169, 168, 0.3);
-  /*box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.2);*/
-
   color: #f9f9f9;
   padding: 4px 15px;
   text-align: center;
