@@ -2,8 +2,7 @@
 @background-color-light: rgba(173,169,168,1.0);     /*Light Grey*/
 @overview-color : rgba(45,45,45,0.4);
 @button-color : rgba(20,20,20,1.0);
-@focus-color : rgba(214,73,55,1.0);     				/*Brihgt Red*/
-/* @focus-color : rgba(214,73,55,1.0); */    				/*Brihgt Red*/
+@focus-color : rgba(214,73,55,1.0);    				/*Brihgt Red*/
 @focus-color-medium : desaturate(@focus-color, 30%);	/*Lighter Red*/
 @focus-color-low : desaturate(@focus-color, 50%);		/* you get the idea */
 
@@ -486,6 +485,7 @@ StScrollBar StButton#vhandle:active {
 .panel-button:overview,
 .panel-button:focus {
     background: @focus-color;
+    color: @text-color-light;
     text-shadow: desaturate(@background-color,40%) 0px -1px 0px;
     border: 0px;
 }
