@@ -439,7 +439,7 @@ StScrollBar StButton#vhandle:active {
 /* Overview ***********************************************************/
 #overview {
   spacing: 20px;
-  background-color: NaN%;
+  background-color: rgba(45, 45, 45, 0.4);
 }
 .workspace-controls {
   visible-width: 25px;

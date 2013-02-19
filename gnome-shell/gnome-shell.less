@@ -1,5 +1,6 @@
 @background-color : rgba(45,45,45,1.0);				/*Dark Grey*/
 @background-color-light: rgba(173,169,168,1.0);
+@overview-color : rgba(45,45,45,0.4);
 @focus-color : rgba(214,73,55,1.0);     				/*Brihgt Red*/
 @focus-color-medium : desaturate(@focus-color, 30%);	/*Lighter Red*/
 @focus-color-low : desaturate(@focus-color, 50%);		/* you get the idea */
@@ -579,7 +580,7 @@ StScrollBar StButton#vhandle:active {
 
 #overview {
     spacing: 20px;
-    background-color: percentage(@background-color,40%);
+    background-color: @overview-color;
 }
 
 .workspace-controls {
