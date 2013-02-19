@@ -1,5 +1,6 @@
 /*Dark Grey*/
 /*Light Grey*/
+/*Dark Grey 40%*/
 /*Brihgt Red*/
 /*Lighter Red*/
 /* you get the idea */
@@ -271,6 +272,14 @@ StScrollBar StButton#vhandle:active {
 .notification-icon-button:insensitive,
 .notification-button:insensitive {
   color: #9f9f9f;
+}
+.modal-dialog-button:default {
+  background: #b2655b;
+  color: #f9f9f9;
+}
+.modal-dialog-button:default:hover,
+.modal-dialog-button:default:focus {
+  background: #d64937;
 }
 /* Entries ************************************************************/
 .notification StEntry,
@@ -1683,8 +1692,8 @@ StBin.overview-icon StLabel {
   font-size: 11pt;
 }
 .polkit-dialog-user-icon {
-  border: 1px solid #3a3a3a;
-  border-radius: 4px;
+  border: 2px solid #3a3a3a;
+  border-radius: 32px;
   background-size: contain;
   width: 48px;
   height: 48px;
