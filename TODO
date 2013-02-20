@@ -1,5 +1,5 @@
 KNOWN ISSUES:
- - Modal dialogs buttons: negative(s) - grey (20,20,20,1.0 with text colour 249,249,249, 0.80), positive - red (214,73,55,1.0 with text colour 249,249,249,1.0) (WiP)
+ - Shutdown dialog red button misses hover state
  - Weather (we're yet to discover where is that class used)
  - GDM/Login/Lock
  - Close buttons and workspace switcher "circle" - the fill colour should be more red shade of grey
@@ -10,9 +10,11 @@ KNOWN ISSUES:
 Fixed in this release:
  - All borders should be with 2px rounded edges
  - The borders of the widgets in the Activities overview should be dark and transparent so they won't stick out that much
- - Callendars arrow - the non hover ones should be lighter (#505050), the hover ones should be red (#d64937)
+ - Callendars arrow - the non hover ones should be lighter, the hover ones should be red (#d64937)
  - process-working images (both svg and png) are white coloured (transparency to opaqueness) and not blue
- - Search box is overlapping panel, there must be some spacing between them (WiP)
+ - Search box is overlapping panel, there must be some spacing between them
+ - Modal dialogs buttons: negative(s) - grey (20,20,20,1.0 with text colour 249,249,249, 0.80), positive - red (214,73,55,1.0 with text colour 249,249,249,1.0)
+ - Shutdown dialogs buttons: <same as modal>
 
 Fixed in previous releases:
  - Way too much to write it all down, plus it will just create clutter in the file
