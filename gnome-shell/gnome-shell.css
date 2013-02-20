@@ -1083,7 +1083,7 @@ StBin.overview-icon StLabel {
   background: #2d2d2d;
   background-repeat: repeat;
   transition-duration: 200;
-  height: 256px;
+  height: 64px;
 }
 #message-tray:keyboard {
   /* Same as the OSK */
