@@ -1,8 +1,7 @@
 /*Dark Grey*/
 /*Light Grey*/
-/* Bright Red*/
 /*Dark Grey 40%*/
-/*Brihgt Red*/
+/* Bright Red*/
 /*Lighter Red*/
 /* you get the idea */
 /*Light Grey*//* Default Border Radius*/
@@ -1294,13 +1293,13 @@ StBin.overview-icon StLabel {
   color: white;
 }
 .summary-source-button:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #b2655b;
 }
 .summary-source-button:selected {
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3) inset;
+  background: #d64937;
 }
 .summary-source-button:focus {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #d64937;
 }
 .summary-source {
   padding-right: 6px;
