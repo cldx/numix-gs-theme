@@ -1,0 +1,328 @@
+
+/* Login Dialog */
+
+.login-dialog-banner {
+    font-size: 10pt;
+    font-weight: bold;
+    text-align: center;
+    color: @text-color;
+    padding-bottom: 1em;
+}
+
+.login-dialog-title {
+    font-size: 22pt;
+    font-weight: bold;
+    color: #666666;
+    padding-bottom: 2em;
+}
+
+.login-dialog {
+    border-image: url("login-chooser.svg") 0 0 2 2;
+    background-color: rgba(0,0,0,0.5);
+    min-height: 150px;
+    max-height: 700px;
+    min-width: 350px;
+}
+
+.login-dialog-prompt-login-hint-message {
+    font-size: 10.5pt;
+}
+
+.login-dialog-user-list-view {
+    -st-vfade-offset: 1em;
+}
+
+.login-dialog-user-list {
+    spacing: 12px;
+    padding: .2em;
+}
+
+.login-dialog-user-list-item {
+    color: #666666;
+    border-radius: 10px;
+    padding: .2em;
+}
+
+.login-dialog-user-list-item:ltr {
+    padding-right: 1em;
+}
+
+.login-dialog-user-list-item:rtl {
+    padding-left: 1em;
+}
+
+.login-dialog-user-list-item .login-dialog-user-list-item-name {
+    font-size: 20pt;
+    padding-left: 1em;
+}
+
+.login-dialog-user-list-item:hover .login-dialog-user-list-item-name,
+.login-dialog-user-list:expanded .login-dialog-user-list-item:focus .login-dialog-user-list-item-name,
+.login-dialog-user-list:expanded .login-dialog-user-list-item:logged-in {
+    color: white;
+    text-shadow: black 0px 2px 2px;
+}
+
+/*.login-dialog-user-list-item:hover {
+    background-color: rgba(255,255,0,0.1);
+}*/
+
+/*.login-dialog-user-list:expanded .login-dialog-user-list-item:focus {
+    color: white;
+}*/
+
+.login-dialog-user-list:expanded .login-dialog-user-list-item:logged-in {
+    background-image: url("logged-in-indicator.svg");
+    background-size: contain;
+}
+
+.login-dialog-user-list-item-text-box {
+    padding: 0 0.5em;
+}
+
+.login-dialog-user-list-item .login-dialog-timed-login-indicator {
+    background-color: rgba(0,0,0,0.0);
+    height: 2px;
+}
+
+.login-dialog-user-list-item:focus .login-dialog-timed-login-indicator {
+    background-color: #8b8b8b;
+}
+
+.login-dialog-user-list-item-icon {
+    border: 1px solid #8b8b8b;
+    border-radius: 5px;
+    width: 64px;
+    height: 64px;
+}
+
+.login-dialog-not-listed-label {
+    font-size: 10.5pt;
+    font-weight: bold;
+    color: #666666;
+    padding-top: 1em;
+}
+
+.login-dialog-not-listed-button:hover .login-dialog-not-listed-label {
+    color: #E8E8E8;
+}
+
+.login-dialog-username {
+    font-size: 22pt;
+    text-shadow: 1px 2px 2px black;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.login-dialog-prompt-layout {
+    padding-right: 42px;
+    padding-left: 42px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    spacing: 8px;
+}
+
+.login-dialog-prompt-label {
+    color: #eeeeee;
+    font-size: 12pt;
+}
+
+.login-dialog-prompt-entry {
+    font-size: 10pt;
+    font-weight: normal;
+    width: 23em;
+    color: rgb(51,51,51);
+    selection-background-color: white;
+    selected-color: rgb(51,51,51);
+    border-radius: 2px;
+    padding: 4px 8px;
+    border: 1px solid rgba(51,51,51,0.8);
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(255,255,255,0.6);
+    background-gradient-end: rgba(255,255,255,0.9);
+    box-shadow: inset 0px 1px 2px 1px rgba(0,0,0,0.2);
+}
+
+.login-dialog-session-list {
+    color: #ffffff;
+    font-size: 10.5pt;
+}
+
+.login-dialog-session-list-button {
+    padding: 4px;
+}
+
+.login-dialog-session-list-button:focus {
+    background-color: rgb(51,51,51);
+}
+
+.login-dialog-session-list-button:active {
+    background-color: rgb(51,51,51);
+}
+
+.login-dialog-session-list-button:hover {
+    font-weight: bold;
+}
+
+.login-dialog-session-list-scroll-view {
+    background-gradient-start: rgba(80,80,80,0.3);
+    background-gradient-end: rgba(80,80,80,0.7);
+    background-gradient-direction: vertical;
+    box-shadow: inset 0px 2px 4px rgba(0,0,0,0.9);
+    border-radius: 5px;
+    border: 1px solid rgba(80,80,80,1.0);
+    padding: .5em;
+}
+
+.login-dialog-session-list-item:focus {
+    background-color: #666666;
+}
+
+.login-dialog-session-list-triangle {
+    padding-right: .5em;
+}
+
+.login-dialog-session-list-item-box {
+    spacing: .25em;
+}
+
+.login-dialog-session-list-item-dot {
+    width: .75em;
+    height: .75em;
+}
+
+
+.login-dialog .modal-dialog-button {
+    border-radius: 2px;
+    font-size: 10pt;
+    color: rgb(51,51,51);
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 4px 32px 5px;
+    border: 0px solid rgba(255,255,255,0.0);
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.5);
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(255,255,255,0.9);
+    background-gradient-end: rgba(255,255,255,0.7);
+}
+
+.login-dialog .modal-dialog-button:default {
+    border-radius: 2px;
+    font-size: 10pt;
+    color: rgb(51,51,51);
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 4px 32px 5px;
+    border: 0px solid rgba(255,255,255,0.0);
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.5);
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(255,255,255,0.9);
+    background-gradient-end: rgba(255,255,255,0.7);
+}
+
+.login-dialog .modal-dialog-button:hover {
+    border: 0px solid rgba(255,255,255,0.0);
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.5);
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(255,255,255,0.8);
+    background-gradient-end: rgba(255,255,255,0.6);
+}
+
+.login-dialog .modal-dialog-button:active,
+.login-dialog .modal-dialog-button:pressed {
+    border: 0px solid rgba(255,255,255,0.0);
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.5);
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(255,255,255,0.8);
+    background-gradient-end: rgba(255,255,255,0.6);
+    padding: 5px 32px 4px;
+}
+
+.login-dialog-message-warning {
+    color: red;
+}
+
+.unlock-dialog-user-name-container {
+    spacing: .4em;
+}
+
+/* Screen shield */
+
+.screen-shield-background {
+    background: black;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.9);
+}
+
+#lockDialogGroup {
+    background-color: black;
+    background-image: url("noise-texture.png");
+    background-repeat: repeat;
+}
+
+.screen-shield-arrows {
+    padding-bottom: 3em;
+}
+
+.screen-shield-arrows Gjs_Arrow {
+    color: white;
+    width: 80px;
+    height: 48px;
+    -arrow-thickness: 12px;
+    -arrow-shadow: 1px 2px 1px rgba(0,0,0,0.8);
+}
+
+.screen-shield-clock {
+    font-family: 'Noto Sans UI', sans-serif;
+    color: white;
+    text-shadow: 1px 2px 2px rgba(0,0,0,1.0);
+    text-align: center;
+    padding-bottom: 1.5em;
+}
+
+.screen-shield-clock-time {
+    font-size: 140px;
+    line-height: 180px;
+    text-shadow: 1px 2px 4px rgba(0,0,0,1.0);
+}
+
+.screen-shield-clock-date {
+    font-size: 72px;
+    line-height: 110px;
+}
+
+#screenShieldNotifications {
+    border-radius: 5px;
+    background-color: rgba(0.0, 0.0, 0.0, 0.9);
+    border: 1px solid #868686;
+    max-height: 500px;
+    padding: 12px 0;
+}
+
+.screen-shield-notifications-box {
+    spacing: 12px;
+}
+
+.screen-shield-notification-source {
+    padding: 0 24px;
+    spacing: 5px;
+}
+
+.screen-shield-notification-label {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Remove background from notifications, otherwise
+   opacity is doubled and they look darker
+*/
+.screen-shield-notifications-box .notification {
+    background-color: transparent;
+}
+
+/* Override padding on resident notifications, since
+   the notifications box has its own spacing
+*/
+.screen-shield-notifications-box .summary-notification-stack-scrollview {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}

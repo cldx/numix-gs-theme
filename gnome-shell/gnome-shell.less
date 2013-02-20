@@ -2,7 +2,7 @@
 @background-color-light: rgba(173,169,168,1.0);     /*Light Grey*/
 @overview-color : rgba(45,45,45,0.4);
 @button-color : rgba(20,20,20,1.0);
-@focus-color : rgba(214,73,55,1.0);    				/*Brihgt Red*/
+@focus-color : rgba(214,73,55,1.0);    				/* Bright Red*/
 @focus-color-medium : desaturate(@focus-color, 30%);	/*Lighter Red*/
 @focus-color-low : desaturate(@focus-color, 50%);		/* you get the idea */
 
@@ -19,12 +19,15 @@
 @text-size: 10pt;
 @text-size-smaller: 9pt;
 @text-size-bigger:12pt;
+
+
+
 /* Text Styles ********************************************************/
 
 
 /* Default Text Style */
 stage {
-    font-family: PT Sans, Cantarell, sans-serif;
+    font-family: 'Noto Sans UI', PT Sans, Cantarell, sans-serif;
     font-size: @text-size;
     color:white;
 }
@@ -1330,10 +1333,10 @@ StBin.overview-icon StLabel {
 
 /* Message Tray *******************************************************/
 #message-tray {
-    background: rgba(45,45,45,1.0); 
+    background: @background-color; 
     background-repeat: repeat;
     transition-duration: 200;
-    height: 64px;
+    height: 256px;
 }
 
 #message-tray:keyboard {
@@ -1342,9 +1345,9 @@ StBin.overview-icon StLabel {
 }
 
 #message-tray:overview {
-    background: @border-transparent;
-    background: rgba(45, 45, 45, 1.0);
+    background: @background-color;
     border-top: @border-width solid @border-color;
+    height:0px;
 }
 
 .notification {
@@ -2187,7 +2190,7 @@ border-color: @border-color;
 /*Fixes for various Extensions*/
 
 /*Weather*/
-
+/*
  .weather-current-summarybox {
     padding-top: 15px;
 
@@ -2216,7 +2219,7 @@ border-color: @border-color;
 }
 
 .weather-icon {
-    padding-right: 0px; /* Remove this line if you use a text and an icon*/
+    padding-right: 0px; Remove this line if you use a text and an icon
     text-shadow: rgba(0,0,0,0.3) 0px 1px 0px;
 }
 
@@ -2242,16 +2245,17 @@ border-color: @border-color;
  .weather-forecast-day {
     color: rgba(0,0,0,0.5);
 }
-
+*/
 
 /*Smart Overview*/
 
 .window-caption {
-    color: rgba(255,255,255,0.95); /*Getting rid of the red-text bug*/
+    color: rgba(255,255,255,0.95); /*Getting rid of the red-text bug  wait....what?*/
 }
 
 /* Message Notifier */
 
+/*
   .message-button {
 }
 
@@ -2271,6 +2275,9 @@ border-color: @border-color;
     background-gradient-end: rgba(255,255,255,0.0);
     box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.0);
 }
-/*Bolt*/
 
-/*I'll added it again if it's updated*/
+*/
+
+
+/* GDM Import */
+/* @import "gdm.less"; */ 

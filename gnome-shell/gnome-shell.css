@@ -1,6 +1,6 @@
 /*Dark Grey*/
 /*Light Grey*/
-/*Brihgt Red*/
+/* Bright Red*/
 /*Lighter Red*/
 /* you get the idea */
 /*Light Grey*//* Default Border Radius*/
@@ -8,7 +8,7 @@
 /* Text Styles ********************************************************/
 /* Default Text Style */
 stage {
-  font-family: PT Sans, Cantarell, sans-serif;
+  font-family: 'Noto Sans UI', PT Sans, Cantarell, sans-serif;
   font-size: 10pt;
   color: white;
 }
@@ -1074,7 +1074,7 @@ StBin.overview-icon StLabel {
   background: #2d2d2d;
   background-repeat: repeat;
   transition-duration: 200;
-  height: 64px;
+  height: 256px;
 }
 #message-tray:keyboard {
   /* Same as the OSK */
@@ -1082,9 +1082,9 @@ StBin.overview-icon StLabel {
   background: rgba(0, 0, 0, 0.8);
 }
 #message-tray:overview {
-  background: rgba(0, 0, 0, 0);
   background: #2d2d2d;
   border-top: 1px solid rgba(173, 169, 168, 0.3);
+  height: 0px;
 }
 .notification {
   background: #2d2d2d;
@@ -1771,72 +1771,90 @@ StBin.overview-icon StLabel {
 }
 /*Fixes for various Extensions*/
 /*Weather*/
-.weather-current-summarybox {
-  padding-top: 15px;
-}
-.weather-current-summary {
-  font-size: 25px;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding: 5px 20px 0 20px;
-}
-.weather-current-databox {
-  padding-top: 15px;
-  padding-left: 10px;
-}
-.weather-current-icon {
-  padding: 15px 20px 15px 35px;
-  width: 50px;
-  height: 50px;
-}
-.weather-current-iconbox {
-  padding: 20px;
-}
-.weather-icon {
-  padding-right: 0px;
-  /* Remove this line if you use a text and an icon*/
+/*
+ .weather-current-summarybox {
+    padding-top: 15px;
 
-  text-shadow: rgba(0, 0, 0, 0.3) 0px 1px 0px;
 }
-.weather-icon-rtl {
-  padding-left: 2px;
+
+ .weather-current-summary {
+    font-size: 25px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding: 5px 20px 0 20px;
 }
-.weather-current-databox-captions {
-  text-align: right;
-  padding-right: 15px;
-  padding-left: 15px;
-  color: rgba(0, 0, 0, 0.5);
+
+ .weather-current-databox {
+    padding-top: 15px;
+    padding-left: 10px;
 }
-.weather-forecast-icon {
+
+ .weather-current-icon {
+    padding: 15px 20px 15px 35px;
+    width: 50px;
+    height: 50px;
+}
+
+ .weather-current-iconbox {
+    padding: 20px;
+}
+
+.weather-icon {
+    padding-right: 0px; Remove this line if you use a text and an icon
+    text-shadow: rgba(0,0,0,0.3) 0px 1px 0px;
+}
+
+ .weather-icon-rtl {
+    padding-left: 2px;
+}
+
+ .weather-current-databox-captions {
+    text-align: right;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: rgba(0,0,0,0.5);
+}
+
+ .weather-forecast-icon {
   padding: 15px 15px 15px 30px;
 }
-.weather-forecast-databox {
+
+ .weather-forecast-databox {
   padding: 15px 30px 15px 0;
 }
-.weather-forecast-day {
-  color: rgba(0, 0, 0, 0.5);
+
+ .weather-forecast-day {
+    color: rgba(0,0,0,0.5);
 }
+*/
 /*Smart Overview*/
 .window-caption {
   color: rgba(255, 255, 255, 0.95);
-  /*Getting rid of the red-text bug*/
+  /*Getting rid of the red-text bug  wait....what?*/
 
 }
 /* Message Notifier */
+/*
+  .message-button {
+}
+
 .message-label {
-  text-align: center;
-  color: rgba(255, 255, 255, 0.98);
-  text-shadow: rgba(0, 0, 0, 0.3) 0px 1px 0px;
-  padding: 2px 6px;
-  border: 1px rgba(0, 0, 0, 0.15);
-  background-color: rgba(255, 255, 255, 0.3);
-  box-shadow: inset 0px -1px 0px 0px rgba(255, 255, 255, 0.15);
-  border-radius: 50px ;
+    text-align: center;
+    color: rgba(255,255,255,0.98);
+    text-shadow: rgba(0,0,0,0.3) 0px 1px 0px;
+    padding: 2px 6px;
+    border: 1px  rgba(0,0,0,0.15);
+    background-color: rgba(255,255,255,0.3);
+    box-shadow:  inset 0px -1px 0px 0px rgba(255,255,255,0.15);
+    border-radius: 50px ;
 }
-.panel-button:hover .message-label {
-  background-gradient-start: rgba(0, 0, 0, 0);
-  background-gradient-end: rgba(255, 255, 255, 0);
-  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0);
+
+.panel-button:hover .message-label{
+	    background-gradient-start: rgba(0,0,0,0.0);
+    background-gradient-end: rgba(255,255,255,0.0);
+    box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.0);
 }
-/*Bolt*/
-/*I'll added it again if it's updated*/
+
+*/
+/* GDM Import */
+/* @import "gdm.less"; */
