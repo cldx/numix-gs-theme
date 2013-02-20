@@ -1,6 +1,6 @@
 @background-color : rgba(45,45,45,1.0);				/*Dark Grey*/
 @background-color-light: rgba(173,169,168,1.0);     /*Light Grey*/
-@overview-color : rgba(45,45,45,0.4);
+@overview-color : rgba(45,45,45,0.4);				/*Dark Grey 40%*/
 @button-color : rgba(20,20,20,1.0);
 @focus-color : rgba(214,73,55,1.0);    				/* Bright Red*/
 @focus-color-medium : desaturate(@focus-color, 30%);	/*Lighter Red*/
@@ -351,6 +351,15 @@ StScrollBar StButton#vhandle:active {
 .notification-icon-button:insensitive,
 .notification-button:insensitive {
     color: #9f9f9f;
+}
+
+.modal-dialog-button:default{
+background : @focus-color-medium;
+color:@text-color-light;
+}
+.modal-dialog-button:default:hover, 
+.modal-dialog-button:default:focus{
+background:@focus-color;
 }
 
 /* Entries ************************************************************/
@@ -2080,8 +2089,8 @@ border-color: @border-color;
 }
 
 .polkit-dialog-user-icon {
-    border: @border-width solid #3A3A3A;
-    border-radius: 4px;
+    border: (@border-width*2) solid #3A3A3A;
+    border-radius: 32px;
     background-size: contain;
     width: 48px;
     height: 48px;
