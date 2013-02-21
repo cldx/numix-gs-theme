@@ -291,7 +291,7 @@ StScrollBar StButton#vhandle:active {
   box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.3);
   caret-color: rgba(255, 255, 255, 0.2);
   caret-size: 1px;
-  color: white;
+  color: #dcdcdc;
   padding: 5px 4px;
   font-size: 10pt;
   transition-duration: 200;
@@ -1082,11 +1082,11 @@ StBin.overview-icon StLabel {
   border-top: 1px solid rgba(173, 169, 168, 0.3);
 }
 .notification {
-  background: #ada9a8;
-  border: 2px solid rgba(255, 255, 255, 0.65);
+  background: #f9f9f9;
+  border: 2px solid rgba(173, 169, 168, 0.3);
   border-radius: 4px 4px 0px 0px;
   border-bottom: 0px;
-  color: #f3f3f3;
+  color: #2d2d2d;
   text-align: left;
   padding: 8px;
   spacing-columns: 10px;

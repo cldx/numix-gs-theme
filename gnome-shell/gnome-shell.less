@@ -373,7 +373,7 @@ background:@focus-color;
     box-shadow: inset 0px 1px 0px rgba(0,0,0,0.3);
     caret-color: rgba(255,255,255,0.2);
     caret-size: 1px;
-    color: white;
+    color: @text-color;
     padding: 5px 4px;
     font-size: @text-size;
     transition-duration: 200;
@@ -1342,11 +1342,11 @@ StBin.overview-icon StLabel {
 }
 
 .notification {
-    background: @background-color-light;
-    border: (@border-width*2) solid rgba(255,255,255,0.65);
+    background: @text-color-light;
+    border: (@border-width*2) solid @border-color;
     border-radius: 4px 4px 0px 0px;
     border-bottom: 0px;
-	color: #f3f3f3;
+	color: @text-color-dark;
     text-align: left;
     padding: 8px;
     spacing-columns: 10px;
