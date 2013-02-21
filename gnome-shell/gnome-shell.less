@@ -641,7 +641,7 @@ background:@focus-color;
     text-align: center;
 }
 
-.window-close {
+.window-close, .notification-close {
     background-color: rgba(0,0,0,0.0);
     background-image: url("img/close-window.svg");
     border-radius: 20px;
@@ -651,10 +651,12 @@ background:@focus-color;
     transition-duration: 600;
     box-shadow:0px 0px 20px rgba(0,0,0,0.5);
     -shell-close-overlap: 20px;
+    -shell-close-overlap-x:12px;
+    -shell-close-overlap-y:12px;
 
 }
 
-.window-close:hover
+.window-close:hover, .notification-close:hover
  {
     background-color: rgba(255,255,255,0.0);
     background-image: url("img/close-window-hover.svg");
@@ -662,25 +664,6 @@ background:@focus-color;
      box-shadow:0px 0px 14px rgba(255,255,255,0.4);
 }
 
-.notification-close{
-	background-color: rgba(255,255,255,0);
-    background-image: url("img/close_dark.svg");
-    border-radius: 4px;
-    color: black;
-    width: 24px;
-    height: 24px;
-    border: @border-width solid rgba(0,0,0,0);
-/*    padding-right: 30px;*/
-
-    transition-duration: 200;
-
-    -shell-close-overlap-x: 0px;
-    -shell-close-overlap-y: 0px;
-}
-
-.notification-close:hover {
-	    background-image: url("img/close.svg");
-}
 
 .window-close:rtl {
 /*    -st-background-image-shadow: 2px 2px 6px rgba(0,0,0,0.5);*/
@@ -826,7 +809,7 @@ background:@focus-color;
 /* Application Launchers and Grid *************************************/
 /* NOTE TO SELF: Where EXACTLY is this used? Just in Overview?*/
 .icon-grid {
-    spacing: 50px;
+    spacing: 20px 70px;
     -shell-grid-horizontal-item-size: 120px;
     -shell-grid-vertical-item-size: 120px;
 }
@@ -1356,15 +1339,13 @@ StBin.overview-icon StLabel {
 #message-tray:overview {
     background: @background-color;
     border-top: @border-width solid @border-color;
-    height:0px;
 }
 
 .notification {
-    background: rgba(45,45,45,1.0);
-    border: @border-width solid rgba(255,255,255,0.65);
+    background: @background-color-light;
+    border: (@border-width*2) solid rgba(255,255,255,0.65);
     border-radius: 4px 4px 0px 0px;
     border-bottom: 0px;
-    /*box-shadow: inset 0px 1px 0px rgba(255,255,255,0.4);*/
 	color: #f3f3f3;
     text-align: left;
     padding: 8px;
@@ -1480,7 +1461,7 @@ StBin.overview-icon StLabel {
 }
 
 .hotplug-transient-box {
-    background-color: rgba(45,45,45,1.0);
+    background-color: transparent;
     spacing: 6px;
     padding: 2px 30px 0px 10px;
 
@@ -1495,7 +1476,7 @@ StBin.overview-icon StLabel {
 }
 
 .hotplug-notification-item-icon {
-    icon-size: 16px;
+    icon-size: 24px;
     padding: 0px 5px;
 }
 
@@ -2263,6 +2244,11 @@ border-color: @border-color;
 }
 
 /* Message Notifier */
+.notification, .notification-unexpanded, .multi-line-notification{
+background : @background-color-light;
+border: 2px;
+box-shadow: inset 0px 2px 4px 0px desaturate(@background-color-light, 40%);
+}
 
 /*
   .message-button {
