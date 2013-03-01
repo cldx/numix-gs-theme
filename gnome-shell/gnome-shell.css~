@@ -1086,7 +1086,7 @@ StBin.overview-icon StLabel {
   border: 2px solid rgba(173, 169, 168, 0.3);
   border-radius: 4px 4px 0px 0px;
   border-bottom: 0px;
-  /*color: #2d2d2d;*/
+  color: #2d2d2d;
   text-align: left;
   padding: 8px;
   spacing-columns: 10px;
