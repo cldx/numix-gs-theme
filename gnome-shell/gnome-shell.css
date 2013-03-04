@@ -1301,7 +1301,7 @@ StBin.overview-icon StLabel {
 }
 /* App Switcher */
 #altTabPopup {
-  background: rgba(0, 0, 0, 0.15);
+  background: rgba(2, 20, 20, 0.35);
 }
 .switcher-list {
   background: #2d2d2d;
@@ -1345,13 +1345,13 @@ StBin.overview-icon StLabel {
 }
 .switcher-list .item-box:selected {
   background-gradient-direction: vertical;
-  background-gradient-end: rgba(255, 255, 255, 0.6);
-  background-gradient-start: rgba(255, 255, 255, 0.9);
-  border-radius: 4px;
-  border: 1px solid rgba(0, 0, 0, 0.4);
-  color: #2e3436;
-  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4);
-  text-shadow: rgba(255, 255, 255, 0.5) 0px 1px 0px;
+  background-gradient-end: rgba(214, 73, 55, 1.0);
+  background-gradient-start: rgba(214, 73, 55, 1.0);
+  border-radius: 2px;
+  /*border: 1px solid rgba(0, 0, 0, 0.4);*/
+  color: #f9f9f9;
+  /*box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4);*/
+  /*text-shadow: rgba(255, 255, 255, 0.5) 0px 1px 0px;*/
 }
 .switcher-list .thumbnail-box {
   padding: 2px;
