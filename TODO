@@ -1,9 +1,9 @@
 KNOWN ISSUES:
  - Shutdown dialog red button misses hover state
- - Weather (we're yet to discover where is that class used)
+ - Weather (https://extensions.gnome.org/extension/613/weather/)
  - GDM/Login/Lock
  - Close buttons and workspace switcher "circle" - the fill colour should be more red shade of grey
- - Nofications bubbles - the Close buttons are hard to see unless you hover on them (actually the buttom design could use redoing)
+ - Nofications bubbles - light notifactions for chat, dark for everything else. The current ones are dark only
  - Needs code cleanup
  - Maybe some other issues
 
@@ -15,6 +15,8 @@ Fixed in this release:
  - Search box is overlapping panel, there must be some spacing between them
  - Modal dialogs buttons: negative(s) - grey (20,20,20,1.0 with text colour 249,249,249, 0.80), positive - red (214,73,55,1.0 with text colour 249,249,249,1.0)
  - Shutdown dialogs buttons: <same as modal>
+ - Notifications text colour
+ - Alt+Tab fixes
 
 Fixed in previous releases:
  - Way too much to write it all down, plus it will just create clutter in the file
