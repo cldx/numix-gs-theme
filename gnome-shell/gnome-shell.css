@@ -503,7 +503,6 @@ StScrollBar StButton#vhandle:active {
   height: 32px;
   width: 32px;
   transition-duration: 600;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
   -shell-close-overlap: 20px;
   -shell-close-overlap-x: 12px;
   -shell-close-overlap-y: 12px;
@@ -513,7 +512,6 @@ StScrollBar StButton#vhandle:active {
   background-color: rgba(255, 255, 255, 0);
   background-image: url("img/close-window-hover.svg");
   border: 0px solid rgba(0, 0, 0, 0);
-  box-shadow: 0px 0px 14px rgba(255, 255, 255, 0.4);
 }
 .window-close:rtl {
   /*    -st-background-image-shadow: 2px 2px 6px rgba(0,0,0,0.5);*/
