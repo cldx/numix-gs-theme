@@ -9,7 +9,8 @@
 /* Text Styles ********************************************************/
 /* Default Text Style */
 stage {
-  font-family: 'Noto Sans UI', PT Sans, Cantarell, sans-serif;
+/*  font-family: 'Noto Sans UI', PT Sans, Cantarell, sans-serif; */
+    font-family: 'Terminus';
   font-size: 10pt;
   color: white;
 }
@@ -232,8 +233,9 @@ StScrollBar StButton#vhandle:active {
 .modal-dialog-button {
   background-color: #ada9a8;
   border-radius: 2px;
-  border: 1px solid rgba(173, 169, 168, 0.3);
-  color: #2d2d2d;
+  /* border: 1px solid rgba(173, 169, 168, 0.3); */
+  /* color: #2d2d2d; */
+  color: #ffffff;
   font-size: 10pt;
   font-weight: bold;
   padding: 5px 15px;
@@ -461,8 +463,8 @@ StScrollBar StButton#vhandle:active {
 .workspace-thumbnails-background {
   background-color: #2d2d2d;
   padding: 5px 5px;
-  border: 1px solid rgba(173, 169, 168, 0.3);
-  border-radius: 2px;
+  /* border: 1px solid rgba(173, 169, 168, 0.3);
+  border-radius: 2px; */
   color: #000;
   border-right: 0px;
   border-top: 1px;
@@ -503,7 +505,6 @@ StScrollBar StButton#vhandle:active {
   height: 32px;
   width: 32px;
   transition-duration: 600;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
   -shell-close-overlap: 20px;
   -shell-close-overlap-x: 12px;
   -shell-close-overlap-y: 12px;
@@ -513,7 +514,6 @@ StScrollBar StButton#vhandle:active {
   background-color: rgba(255, 255, 255, 0);
   background-image: url("img/close-window-hover.svg");
   border: 0px solid rgba(0, 0, 0, 0);
-  box-shadow: 0px 0px 14px rgba(255, 255, 255, 0.4);
 }
 .window-close:rtl {
   /*    -st-background-image-shadow: 2px 2px 6px rgba(0,0,0,0.5);*/
@@ -526,8 +526,8 @@ StScrollBar StButton#vhandle:active {
   background: url("img/dash_bg.svg");
   background-position: 0px 0px;
   border: 1px solid transparent;
-  border-left: 0px;
-  border-radius: 0px 4px 4px 0px;
+  /*border-left: 0px;
+  border-radius: 0px 4px 4px 0px; */
 }
 #dash:rtl {
   background: url("img/dash_bg_rtl.svg");
@@ -1082,12 +1082,13 @@ StBin.overview-icon StLabel {
   border-top: 1px solid rgba(173, 169, 168, 0.3);
 }
 .notification {
-  background: #f9f9f9;
-  border: 2px solid rgba(173, 169, 168, 0.3);
+  /* background: #f9f9f9; */
+  background: #2d2d2d;
+  /* border: 2px solid rgba(173, 169, 168, 0.3); */
   border-radius: 4px 4px 0px 0px;
   border-bottom: 0px;
   /*color: #2d2d2d;*/
-  text-align: left;
+  text-align: center;
   padding: 8px;
   spacing-columns: 10px;
   spacing-rows: 10px;
@@ -1394,7 +1395,7 @@ StBin.overview-icon StLabel {
   background: transparent;
 }
 .workspace-switcher {
-  background-color: transparent;
+  background-color: #2d2d2d;
 }
 .workspace-switcher * {
   width: 100px;
@@ -1406,7 +1407,7 @@ StBin.overview-icon StLabel {
   background: url('img/ws-switch-arrow-down.svg');
 }
 .ws-switcher-box {
-  height: 200px;
+  height: 150px;
 }
 /* Modal Dialogs */
 /* Dialog Subject Text Style */
@@ -1429,7 +1430,7 @@ StBin.overview-icon StLabel {
     color: rgba(45,45,45,0.9);
     border: @border-width solid rgba(0,0,0,0.1);
     background-color: rgba(249,249,249,0.8);
-  box-shadow: inset 0px 1px 0px rgba(255,255,255,0.4);	
+  box-shadow: inset 0px 1px 0px rgba(255,255,255,0.4);
     padding: 4px;
 }*/
 /*END OF THE ONE THAT DOESN'T WORK*/
@@ -1830,9 +1831,9 @@ StBin.overview-icon StLabel {
 .notification,
 .notification-unexpanded,
 .multi-line-notification {
-  background: #ada9a8;
+  background: #2d2d2d;
   border: 2px;
-  box-shadow: inset 0px 2px 4px 0px #ababab;
+  box-shadow: inset 0px 2px 4px 0px #3a3a3a; /* #ababab; */
 }
 /*
   .message-button {
